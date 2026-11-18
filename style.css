@@ -500,3 +500,5 @@ input[type=range]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 
 }
 .stats b span { font-size: inherit; color: inherit; }
 @media (max-width: 720px) { .pill { font-size: 12.5px; padding: 6px 12px 6px 10px; } .device { transform: none; animation: none; } }
+.toast { visibility: hidden; transition: translate .5s cubic-bezier(.2, .9, .25, 1.15), visibility 0s .5s; }
+.toast.on { visibility: visible; transition: translate .5s cubic-bezier(.2, .9, .25, 1.15); }
