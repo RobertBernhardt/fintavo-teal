@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>fintavo · Ratenzahlung für Tierarztpraxen</title>
-<meta name="description" content="fintavo ist die KI-native Finanzierungsplattform für Tierarztpraxen: Tierhalter zahlen in Raten, Ihre Praxis erhält den vollen Betrag am nächsten Werktag.">
+<title>fintavo · Behandlungsfinanzierung für Tierarztpraxen</title>
+<meta name="description" content="Eine Finanzierungsanfrage, über 20 Partnerbanken, Zusage meist in wenigen Minuten. Ihre Praxis erhält den vollen Betrag, das Kreditrisiko trägt die Bank.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#faf8f5">
+<meta name="theme-color" content="#0c2b2c">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
@@ -15,22 +15,22 @@
 <body>
 <a class="skip" href="#main">Zum Inhalt</a>
 
-<!-- ============ HEADER ============ -->
-<header class="top" id="top">
-  <div class="wrap top-in">
+<div class="aura" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+
+<header class="top">
+  <div class="top-in">
     <a class="brand" href="#" aria-label="fintavo Startseite">
-      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect class="b1" x="4" y="5" width="30" height="8.5" rx="4.25"/><rect class="b2" x="4" y="16" width="21" height="8.5" rx="4.25"/><circle class="b3" cx="8.6" cy="31.6" r="4.6"/></svg>
-      <span class="word"><span class="f">f</span>intavo</span>
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a9aa0"/><stop offset="1" stop-color="#1b5f66"/></linearGradient></defs><rect class="b1" x="4" y="5" width="30" height="8.5" rx="4.25"/><rect class="b2" x="4" y="16" width="21" height="8.5" rx="4.25"/><circle class="b3" cx="8.6" cy="31.6" r="4.6"/></svg>
+      <span class="word">fintavo</span>
     </a>
     <nav class="nav" aria-label="Hauptnavigation">
-      <a href="#praxen">Für Praxen</a>
-      <a href="#ablauf">So funktioniert's</a>
+      <a href="#ablauf">Ablauf</a>
+      <a href="#banken">20 Banken</a>
       <a href="#rechner">Rechner</a>
-      <a href="#tierhalter">Für Tierhalter</a>
-      <a href="#preise">Preise</a>
+      <a href="#tierhalter">Tierhalter</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-sm btn-dark" href="#pilot">Praxis anmelden</a>
+    <a class="btn btn-dark btn-sm" href="#start">Gespräch vereinbaren</a>
     <button class="burger" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
@@ -38,448 +38,315 @@
 <main id="main">
 
 <!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="wrap hero-grid">
+<section class="panel dark hero">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="hero-grid">
     <div class="hero-copy">
-      <p class="pill reveal"><span class="pulse"></span> Pilotphase München · noch <b data-seats>37</b> Gründerpraxis-Plätze</p>
-      <h1 class="reveal">Behandeln statt verhandeln.</h1>
-      <p class="lead reveal">fintavo bringt Ratenzahlung an jeden Empfangstresen. Tierhalter zahlen die Rechnung in 3 bis 24 Monatsraten, <b>Ihre Praxis erhält den vollen Betrag am nächsten Werktag.</b> KI-Kreditentscheidung in unter 30 Sekunden, ohne Ausfallrisiko für Sie.</p>
+      <p class="label light reveal">Behandlungsfinanzierung für Tierarztpraxen</p>
+      <h1 class="reveal">Kein Nein mehr wegen der Rechnung.</h1>
+      <p class="lead light reveal">Eine Anfrage am Tresen geht gleichzeitig an <b>über 20 Partnerbanken</b>. Der Tierhalter sieht die beste Rate auf seinem Handy, die Zusage kommt meist in wenigen Minuten. Ihre Praxis erhält den vollen Betrag, das Kreditrisiko trägt die Bank.</p>
       <div class="cta-row reveal">
-        <a class="btn btn-teal" href="#pilot">Kostenlos als Pilotpraxis starten <span class="arr">→</span></a>
-        <a class="btn btn-ghost" href="#rechner">Umsatzpotenzial berechnen</a>
+        <a class="btn btn-mint" href="#rechner">Umsatzpotenzial berechnen <span class="arr">→</span></a>
+        <a class="btn btn-glass" href="#start">Gründerpraxis werden</a>
       </div>
-      <ul class="ticks reveal">
-        <li>Live in 10 Minuten, ohne Installation</li>
-        <li>Keine Grundgebühr, keine Mindestlaufzeit</li>
-        <li>6 Monate gebührenfrei für die ersten 100 Praxen</li>
+      <ul class="chips reveal">
+        <li>Kein Softwarewechsel</li><li>Startklar in wenigen Tagen</li><li>0 € Kreditrisiko</li>
       </ul>
     </div>
 
-    <!-- animated checkout demo -->
-    <div class="hero-vis" aria-label="Animierte Vorschau: eine Tierarztrechnung wird in Raten finanziert">
-      <div class="blob" aria-hidden="true"></div>
-      <div class="device">
-        <div class="dev-bar"><span></span><span></span><span></span><em>fintavo · Empfang</em></div>
-        <div class="stages">
-          <!-- 1 invoice -->
-          <div class="stage is-on" data-stage="0">
-            <div class="row between"><span class="tag">Rechnung #2026-1184</span><span class="muted">heute, 10:42</span></div>
-            <div class="patient">
-              <div class="pet-ava" aria-hidden="true">
-                <svg viewBox="0 0 64 64"><path d="M14 22c-6 2-8 14-3 18 3 2 6-2 7-6" fill="#c98a4b"/><path d="M50 22c6 2 8 14 3 18-3 2-6-2-7-6" fill="#c98a4b"/><ellipse cx="32" cy="34" rx="18" ry="17" fill="#e7b077"/><ellipse cx="32" cy="42" rx="10" ry="7.5" fill="#f6dcc0"/><ellipse cx="32" cy="38.5" rx="4" ry="3" fill="#2a1c12"/><circle class="eye" cx="25" cy="30" r="2.6" fill="#2a1c12"/><circle class="eye" cx="39" cy="30" r="2.6" fill="#2a1c12"/><path d="M29 45q3 3 6 0" stroke="#2a1c12" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
-              </div>
-              <div><b>Bello</b><span class="muted">Labrador, 6 Jahre</span></div>
-            </div>
-            <ul class="lines">
-              <li><span>Kreuzband-OP (TPLO)</span><span>2.190,00&nbsp;€</span></li>
-              <li><span>Narkose &amp; Monitoring</span><span>410,00&nbsp;€</span></li>
-              <li><span>Röntgen, Nachsorge</span><span>240,00&nbsp;€</span></li>
-            </ul>
-            <div class="row between total"><span>Gesamt</span><b>2.840,00&nbsp;€</b></div>
-            <div class="fake-btn">Ratenzahlung anbieten</div>
-          </div>
-          <!-- 2 qr -->
-          <div class="stage" data-stage="1">
-            <p class="st-title">Tierhalter scannt den Code</p>
-            <div class="qr-wrap"><div class="qr" id="qr"></div><div class="scan"></div></div>
-            <p class="muted center">Kein Konto, keine App. Nur das Handy.</p>
-          </div>
-          <!-- 3 plan -->
-          <div class="stage" data-stage="2">
-            <p class="st-title">Ratenplan wählen</p>
-            <div class="plans">
-              <div class="plan"><b>3 ×</b><span>946,67&nbsp;€</span><em>0&nbsp;% Zinsen</em></div>
-              <div class="plan"><b>6 ×</b><span>473,33&nbsp;€</span><em>0&nbsp;% Zinsen</em></div>
-              <div class="plan pick"><b>12 ×</b><span>246,56&nbsp;€</span><em>7,90&nbsp;% eff.</em></div>
-              <div class="plan"><b>24 ×</b><span>127,96&nbsp;€</span><em>7,90&nbsp;% eff.</em></div>
-            </div>
-            <div class="cursor" aria-hidden="true"></div>
-          </div>
-          <!-- 4 ai check -->
-          <div class="stage" data-stage="3">
-            <p class="st-title">KI-Prüfung läuft</p>
-            <ul class="checks">
-              <li><i></i>Identität per Video-Ident-Light</li>
-              <li><i></i>Kontoblick (PSD2), 90 Tage</li>
-              <li><i></i>Tragfähigkeit der Rate</li>
-              <li><i></i>Rechnung GOT-plausibel</li>
-            </ul>
-            <div class="bar"><span></span></div>
-          </div>
-          <!-- 5 approved -->
-          <div class="stage" data-stage="4">
-            <div class="ok"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg></div>
-            <p class="st-title center">Genehmigt in 23 Sekunden</p>
-            <div class="payout"><span>Auszahlung an Ihre Praxis</span><b>2.840,00&nbsp;€</b><em>morgen, Mittwoch</em></div>
-          </div>
+    <!-- signature: request orbits 20 banks -->
+    <div class="orbit-card glass reveal" aria-label="Animation: eine Finanzierungsanfrage geht an 20 Banken, die beste Rate gewinnt">
+      <div class="oc-head">
+        <span class="dotlive"></span><span id="oc-status">Anfrage wird gesendet</span>
+        <em id="oc-count">0 / 20</em>
+      </div>
+      <div class="orbit" id="orbit">
+        <svg class="orbit-lines" viewBox="-200 -200 400 400" aria-hidden="true"><circle r="150" class="ring1"/><circle r="104" class="ring2"/><g id="rays"></g></svg>
+        <div class="core" id="core">
+          <span class="core-k">Bello · Kreuzband-OP</span>
+          <b class="core-v">2.840&nbsp;€</b>
+          <span class="core-k">24 Monate</span>
         </div>
-        <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
       </div>
-
-      <div class="float f-pay" aria-hidden="true">
-        <span class="ico">€</span>
-        <div><b>+ 2.840,00&nbsp;€</b><span>Auszahlung eingegangen</span></div>
-      </div>
-      <div class="float f-quote" aria-hidden="true">
-        <span class="muted">Behandlungsquote</span>
-        <b>+31&nbsp;%</b>
-        <svg viewBox="0 0 120 40"><path class="spark" d="M2 34 L20 30 L36 32 L52 22 L68 24 L84 14 L100 12 L118 4"/></svg>
-      </div>
-      <div class="float f-paw" aria-hidden="true">
-        <svg viewBox="0 0 40 40"><g fill="currentColor"><ellipse cx="20" cy="26" rx="8" ry="7"/><ellipse cx="9" cy="17" rx="3.4" ry="4.4"/><ellipse cx="16" cy="10" rx="3.4" ry="4.6"/><ellipse cx="24" cy="10" rx="3.4" ry="4.6"/><ellipse cx="31" cy="17" rx="3.4" ry="4.4"/></g></svg>
+      <div class="offers" id="offers" aria-live="polite"></div>
+      <div class="oc-foot" id="oc-foot">
+        <div><span>Beste Rate auf dem Handy</span><b id="best">wird ermittelt…</b></div>
+        <div class="payout-chip" id="payout">Auszahlung an Ihre Praxis · 2.840,00&nbsp;€</div>
       </div>
     </div>
   </div>
+</section>
 
-  <div class="wrap stats reveal">
-    <div><b data-count="27">27</b><span>Sek. Ø Kreditentscheidung</span></div>
-    <div><b><span data-count="100">100</span> %</b><span>Auszahlung, ohne Abzug von Ausfällen</span></div>
-    <div><b><span data-count="0">0</span> €</b><span>Ausfallrisiko für die Praxis</span></div>
-    <div><b>3–24</b><span>Monate Laufzeit für Tierhalter</span></div>
-  </div>
+<!-- ============ FACTS ============ -->
+<section class="facts">
+  <div class="fact glass reveal"><b><span data-count="20">20</span>+</b><span>Partnerbanken pro Anfrage</span></div>
+  <div class="fact glass reveal"><b>Minuten</b><span>bis zur Zusage, in der Regel</span></div>
+  <div class="fact glass reveal"><b>0&nbsp;€</b><span>Kreditrisiko für Ihre Praxis</span></div>
+  <div class="fact glass reveal"><b>Tage</b><span>bis zum Start, kein IT-Projekt</span></div>
 </section>
 
 <!-- ============ PROBLEM ============ -->
-<section class="sec problem" id="praxen">
-  <div class="wrap">
-    <p class="eyebrow reveal">Das Problem am Tresen</p>
-    <h2 class="reveal">„Wir überlegen es uns noch mal.“<br><span class="soft">Der teuerste Satz in Ihrer Praxis.</span></h2>
-    <div class="prob-grid">
-      <article class="card prob reveal">
-        <div class="ill">
-          <svg viewBox="0 0 160 90" aria-hidden="true"><rect x="10" y="12" width="88" height="66" rx="10" class="paper"/><path d="M24 30h52M24 42h40M24 54h46" class="ln"/><text x="24" y="70" class="big">2.840&nbsp;€</text><g class="shock"><circle cx="128" cy="46" r="20"/><path d="M128 34v14M128 55v1"/></g></svg>
-        </div>
-        <h3>Teure Eingriffe werden verschoben</h3>
-        <p>Seit der GOT-Novelle von 2022 kosten viele Behandlungen deutlich mehr. Kreuzband, Zähne, Fremdkörper: vierstellige Beträge sind Alltag, und nur ein Teil der Tiere ist versichert.</p>
-      </article>
-      <article class="card prob reveal">
-        <div class="ill">
-          <svg viewBox="0 0 160 90" aria-hidden="true"><g class="stack"><rect x="20" y="40" width="70" height="40" rx="8"/><rect x="28" y="28" width="70" height="40" rx="8"/><rect x="36" y="16" width="70" height="40" rx="8"/></g><text x="48" y="42" class="mid">MAHNUNG</text><circle cx="130" cy="30" r="12" class="clock"/><path d="M130 23v8l5 3" class="hand"/></svg>
-        </div>
-        <h3>Ihre Praxis spielt Bank</h3>
-        <p>Teilzahlung „auf Vertrauen“, offene Posten, Mahnungen, Inkasso. Das kostet Ihr Team Stunden pro Woche und Sie im Zweifel den ganzen Betrag.</p>
-      </article>
-      <article class="card prob reveal">
-        <div class="ill">
-          <svg viewBox="0 0 160 90" aria-hidden="true"><path d="M20 70 Q60 70 70 46 T120 24" class="curve"/><g class="heart"><path d="M128 30c-6-8-18-2-12 8l12 12 12-12c6-10-6-16-12-8z"/></g><circle cx="20" cy="70" r="5" class="pt"/></svg>
-        </div>
-        <h3>Und am Ende leidet das Tier</h3>
-        <p>Wenn Geld entscheidet und nicht die Diagnose, verliert jeder: der Patient, der Halter und Ihr Team, das genau weiß, was eigentlich nötig wäre.</p>
-      </article>
-    </div>
+<section class="panel light problem">
+  <p class="label reveal">Das Problem am Tresen</p>
+  <h2 class="reveal">„Wir überlegen es uns noch mal.“<br><span class="soft">Der teuerste Satz in Ihrer Praxis.</span></h2>
+  <div class="prob-grid">
+    <article class="pcard reveal">
+      <div class="ill"><svg viewBox="0 0 160 90" aria-hidden="true"><rect x="10" y="12" width="88" height="66" rx="10" class="paper"/><path d="M24 30h52M24 42h40M24 54h46" class="ln"/><text x="24" y="70" class="big">2.840 €</text><g class="shock"><circle cx="128" cy="46" r="20"/><path d="M128 34v14M128 55v1"/></g></svg></div>
+      <h3>Teure Eingriffe werden verschoben</h3>
+      <p>Seit der GOT-Novelle von 2022 kosten viele Behandlungen deutlich mehr. Kreuzband, Zähne, Fremdkörper: vierstellige Beträge sind Alltag, und nur ein Teil der Tiere ist versichert.</p>
+    </article>
+    <article class="pcard reveal">
+      <div class="ill"><svg viewBox="0 0 160 90" aria-hidden="true"><g class="stack"><rect x="20" y="40" width="70" height="40" rx="8"/><rect x="28" y="28" width="70" height="40" rx="8"/><rect x="36" y="16" width="70" height="40" rx="8"/></g><text x="47" y="40" class="mid">TEILZAHLUNG</text><circle cx="130" cy="30" r="12" class="clock"/><path d="M130 23v8l5 3" class="hand"/></svg></div>
+      <h3>Teilzahlung „auf Vertrauen“</h3>
+      <p>Wer selbst Raten anbietet, spielt Bank: offene Posten, Erinnerungen, Ausfälle. Das Risiko liegt bei Ihnen, die Arbeit bei Ihrem Team.</p>
+    </article>
+    <article class="pcard reveal">
+      <div class="ill"><svg viewBox="0 0 160 90" aria-hidden="true"><path d="M20 70 Q60 70 70 46 T120 24" class="curve"/><g class="heart"><path d="M128 30c-6-8-18-2-12 8l12 12 12-12c6-10-6-16-12-8z"/></g><circle cx="20" cy="70" r="5" class="pt"/></svg></div>
+      <h3>Und am Ende leidet das Tier</h3>
+      <p>Wenn das Konto entscheidet und nicht die Diagnose, verliert jeder: der Patient, der Halter und Ihr Team, das genau weiß, was nötig wäre.</p>
+    </article>
   </div>
 </section>
 
-<!-- ============ HOW ============ -->
-<section class="sec how" id="ablauf">
-  <div class="wrap">
-    <p class="eyebrow reveal">So funktioniert's</p>
-    <h2 class="reveal">Vom Kostenvoranschlag zur Auszahlung<br><span class="soft">in vier Schritten.</span></h2>
-    <ol class="steps">
-      <li class="step reveal">
-        <span class="num">01</span>
-        <div class="mini mini-a" aria-hidden="true"><span class="chip">KV</span><span class="ln w80"></span><span class="ln w60"></span><span class="ln w70"></span><span class="sum">1.960&nbsp;€</span></div>
-        <h3>Betrag eingeben</h3>
-        <p>Rechnung oder Kostenvoranschlag im fintavo-Dashboard anlegen oder als PDF hochladen. Die KI liest Positionen und Betrag selbst aus.</p>
-      </li>
-      <li class="step reveal">
-        <span class="num">02</span>
-        <div class="mini mini-b" aria-hidden="true"><div class="qr sm" data-qr></div></div>
-        <h3>Code zeigen</h3>
-        <p>Der Tierhalter scannt den QR-Code am Tresen oder bekommt den Link per SMS. Kein Konto, keine App, keine Papierformulare.</p>
-      </li>
-      <li class="step reveal">
-        <span class="num">03</span>
-        <div class="mini mini-c" aria-hidden="true"><div class="ring"><svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18"/><circle class="r" cx="22" cy="22" r="18"/></svg><b>23s</b></div></div>
-        <h3>KI entscheidet</h3>
-        <p>Raten wählen, Identität bestätigen, Kontoblick freigeben. Unser Modell entscheidet in Sekunden, nicht nach drei Tagen Schufa-Post.</p>
-      </li>
-      <li class="step reveal">
-        <span class="num">04</span>
-        <div class="mini mini-d" aria-hidden="true"><span class="coin">€</span><span class="coin">€</span><span class="coin">€</span></div>
-        <h3>Geld ist da</h3>
-        <p>Der volle Rechnungsbetrag landet am nächsten Werktag auf Ihrem Praxiskonto. Ratenzahlung, Erinnerungen und Ausfälle sind ab jetzt unser Thema.</p>
-      </li>
-    </ol>
-  </div>
+<!-- ============ ABLAUF ============ -->
+<section class="panel light how" id="ablauf">
+  <p class="label reveal">Ablauf</p>
+  <h2 class="reveal">Vom Kostenvoranschlag zur Behandlung.<br><span class="soft">In einem Gespräch am Tresen.</span></h2>
+  <ol class="steps">
+    <li class="step reveal">
+      <span class="num">01</span>
+      <div class="mini mini-a" aria-hidden="true"><span class="chip">KVA</span><span class="ln w80"></span><span class="ln w60"></span><span class="ln w70"></span><span class="sum">2.840&nbsp;€</span></div>
+      <h3>Betrag erfassen</h3>
+      <p>Kostenvoranschlag als PDF hochladen oder Betrag eintippen. Ihre Praxissoftware bleibt, wie sie ist.</p>
+    </li>
+    <li class="step reveal">
+      <span class="num">02</span>
+      <div class="mini mini-b" aria-hidden="true"><div class="qr sm" data-qr></div></div>
+      <h3>Tierhalter scannt</h3>
+      <p>QR-Code am Tresen oder Link per SMS. Kein Konto, keine App, kein Papierformular.</p>
+    </li>
+    <li class="step reveal">
+      <span class="num">03</span>
+      <div class="mini mini-c" aria-hidden="true"><div class="tiles">
+        <i></i><i class="y"></i><i></i><i></i><i class="y"></i><i></i><i></i><i class="y best"></i><i></i><i></i>
+      </div></div>
+      <h3>20+ Banken bieten</h3>
+      <p>Die Anfrage geht gleichzeitig an alle Partnerbanken. Der Tierhalter wählt die beste Rate auf dem Handy.</p>
+    </li>
+    <li class="step reveal">
+      <span class="num">04</span>
+      <div class="mini mini-d" aria-hidden="true"><span class="coin">€</span><span class="coin">€</span><span class="coin">€</span></div>
+      <h3>Behandeln, Geld erhalten</h3>
+      <p>Zusage meist in Minuten. Die Klinik erhält den Betrag ausgezahlt, Raten und Risiko liegen bei der Bank.</p>
+    </li>
+  </ol>
 </section>
 
-<!-- ============ CALCULATORS ============ -->
-<section class="sec calc" id="rechner">
-  <div class="wrap">
-    <p class="eyebrow reveal">Rechner</p>
-    <h2 class="reveal">Was bringt Ratenzahlung<br><span class="soft">Ihrer Praxis konkret?</span></h2>
-    <div class="tabs reveal" role="tablist">
-      <button role="tab" class="tab is-on" aria-selected="true" data-tab="praxis">Für Praxisinhaber</button>
-      <button role="tab" class="tab" aria-selected="false" data-tab="halter">Für Tierhalter</button>
-      <span class="tab-blob" aria-hidden="true"></span>
-    </div>
-
-    <div class="panel is-on" data-panel="praxis">
-      <div class="calc-grid">
-        <div class="card inputs">
-          <label class="rng"><span>Behandlungen pro Monat, die aus Kostengründen verschoben oder abgelehnt werden</span><output id="o-n">12</output><input type="range" id="i-n" min="1" max="60" value="12"></label>
-          <label class="rng"><span>Durchschnittlicher Rechnungsbetrag dieser Fälle</span><output id="o-a">1.200&nbsp;€</output><input type="range" id="i-a" min="300" max="5000" step="50" value="1200"></label>
-          <label class="rng"><span>Davon mit Ratenzahlung doch durchgeführt</span><output id="o-q">40&nbsp;%</output><input type="range" id="i-q" min="10" max="80" step="5" value="40"></label>
-          <label class="rng"><span>Stunden pro Woche für offene Posten und Mahnungen</span><output id="o-h">4 h</output><input type="range" id="i-h" min="0" max="20" value="4"></label>
-        </div>
-        <div class="card result">
-          <span class="muted">Zusätzlicher Umsatz pro Jahr</span>
-          <b class="big-num" id="r-rev">69.120&nbsp;€</b>
-          <div class="bars" aria-hidden="true"><span class="b-old"></span><span class="b-new" id="r-bar"></span></div>
-          <div class="row between"><span>Abzüglich fintavo-Gebühr (3,9&nbsp;%)</span><b id="r-fee">2.696&nbsp;€</b></div>
-          <div class="row between"><span>Gesparte Teamzeit</span><b id="r-hours">208 h</b></div>
-          <div class="row between strong"><span>Netto für Ihre Praxis</span><b id="r-net">66.424&nbsp;€</b></div>
-          <a class="btn btn-teal full" href="#pilot">Das will ich: Pilotplatz sichern</a>
-          <p class="fine">Modellrechnung mit Ihren Eingaben, keine Garantie. Gebühr im Gründerpraxis-Programm die ersten 6 Monate 0&nbsp;%.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" data-panel="halter">
-      <div class="calc-grid">
-        <div class="card inputs">
-          <label class="rng"><span>Rechnungsbetrag</span><output id="o-b">2.840&nbsp;€</output><input type="range" id="i-b" min="200" max="10000" step="10" value="2840"></label>
-          <div class="seg" role="radiogroup" aria-label="Laufzeit">
-            <button data-m="3">3 Monate</button><button data-m="6">6 Monate</button><button data-m="12" class="is-on">12 Monate</button><button data-m="24">24 Monate</button>
-          </div>
-          <div class="pets" aria-hidden="true">
-            <button class="pet is-on" data-pet="hund" data-amt="2840" title="Kreuzband-OP Hund">🐕<span>Kreuzband-OP</span></button>
-            <button class="pet" data-pet="katze" data-amt="680" title="Zahnsanierung Katze">🐈<span>Zahnsanierung</span></button>
-            <button class="pet" data-pet="pferd" data-amt="7800" title="Kolik-OP Pferd">🐎<span>Kolik-OP</span></button>
-            <button class="pet" data-pet="hase" data-amt="420" title="Zahnbehandlung Kaninchen">🐇<span>Zahn-OP</span></button>
-          </div>
-        </div>
-        <div class="card result">
-          <span class="muted">Ihre monatliche Rate</span>
-          <b class="big-num" id="h-rate">246,56&nbsp;€</b>
-          <div class="cal" id="h-cal" aria-hidden="true"></div>
-          <div class="row between"><span>Sollzins / eff. Jahreszins</span><b id="h-zins">7,63&nbsp;% / 7,90&nbsp;%</b></div>
-          <div class="row between"><span>Gesamtbetrag</span><b id="h-total">2.958,70&nbsp;€</b></div>
-          <p class="fine" id="h-note">Repräsentatives Beispiel. Bei 3 und 6 Monaten 0&nbsp;% Zinsen, die Gebühr trägt die Praxis. Kreditgeber ist unsere Partnerbank, fintavo vermittelt. Bonität vorausgesetzt.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AI ============ -->
-<section class="sec ai" id="ki">
-  <div class="wrap ai-grid">
+<!-- ============ 20 BANKEN ============ -->
+<section class="panel dark banks" id="banken">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="banks-grid">
     <div>
-      <p class="eyebrow light reveal">KI-nativ, nicht KI-dekoriert</p>
-      <h2 class="reveal">Ihr Team behandelt.<br><span class="soft">Den Papierkram macht fintavo.</span></h2>
-      <ul class="feat">
-        <li class="reveal"><b>Entscheidung in Sekunden</b><span>Kontodaten statt Schufa-Score allein. So bekommen auch Menschen eine faire Chance, die ein klassischer Händlerkredit ablehnt.</span></li>
-        <li class="reveal"><b>Rechnung liest sich selbst</b><span>PDF oder Foto vom Kostenvoranschlag: Positionen, GOT-Ziffern und Betrag werden automatisch erkannt und geprüft.</span></li>
-        <li class="reveal"><b>Kein Mahnwesen mehr</b><span>Raten, Erinnerungen, Rücklastschriften: alles läuft bei uns. Ihre offenen Posten gehen auf null.</span></li>
-        <li class="reveal"><b>Läuft neben jeder Praxissoftware</b><span>Browser auf, einloggen, fertig. Keine Installation, keine IT-Abteilung, kein Hardware-Terminal.</span></li>
+      <p class="label light reveal">Warum 20 Banken statt einer</p>
+      <h2 class="reveal light-h">Eine Bank sagt Ja oder Nein.<br><span class="soft">Zwanzig Banken machen Angebote.</span></h2>
+      <p class="lead light reveal">Klassische Ratenkauf-Anbieter haben genau einen Kreditgeber. Passt der Tierhalter nicht in dessen Raster, ist die Behandlung vom Tisch. fintavo fragt alle Partnerbanken gleichzeitig. Mehr Halter bekommen eine Zusage, und die bekommen die beste Rate am Markt.</p>
+      <ul class="vs reveal">
+        <li><span>Ein Kreditgeber</span><b class="bad">1 Antwort, oft Absage</b></li>
+        <li><span>fintavo</span><b class="good">20+ Antworten, beste Rate gewinnt</b></li>
       </ul>
+      <a class="btn btn-mint reveal" href="#start">Mehr Zusagen für meine Praxis <span class="arr">→</span></a>
     </div>
-    <div class="ai-vis reveal" aria-hidden="true">
-      <div class="doc">
-        <div class="doc-h"><span>kostenvoranschlag_luna.pdf</span><em>KI liest…</em></div>
-        <div class="doc-l"><span>Zahnsanierung, 4 Extraktionen</span><b>GOT 3.4.2</b><i>520,00&nbsp;€</i></div>
-        <div class="doc-l"><span>Inhalationsnarkose</span><b>GOT 6.1</b><i>118,40&nbsp;€</i></div>
-        <div class="doc-l"><span>Dental-Röntgen</span><b>GOT 2.2</b><i>86,00&nbsp;€</i></div>
-        <div class="doc-l"><span>Medikamente</span><b>AMG</b><i>42,60&nbsp;€</i></div>
-        <div class="laser"></div>
+    <div class="compare reveal" aria-hidden="true">
+      <div class="cmp glass">
+        <span class="cmp-t">Ein Kreditgeber</span>
+        <div class="one"><i class="bk"></i></div>
+        <div class="res no">Abgelehnt</div>
       </div>
-      <div class="extract">
-        <div><span>Patient</span><b>Luna, Katze</b></div>
-        <div><span>Betrag</span><b>767,00&nbsp;€</b></div>
-        <div><span>Plausibilität</span><b class="g">✓ geprüft</b></div>
-        <div><span>Angebot</span><b>6 × 127,83&nbsp;€, 0&nbsp;%</b></div>
+      <div class="cmp glass">
+        <span class="cmp-t">fintavo</span>
+        <div class="many" id="many"></div>
+        <div class="res yes" id="many-res">4 Zusagen · ab 126,15&nbsp;€</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ PET OWNERS ============ -->
-<section class="sec owners" id="tierhalter">
-  <div class="wrap own-grid">
+<!-- ============ RECHNER ============ -->
+<section class="panel light calc" id="rechner">
+  <p class="label reveal">Rechner</p>
+  <h2 class="reveal">Was bringt Finanzierung<br><span class="soft">Ihrer Praxis konkret?</span></h2>
+  <div class="tabs reveal" role="tablist">
+    <button role="tab" class="tab is-on" aria-selected="true" data-tab="praxis">Für Praxisinhaber</button>
+    <button role="tab" class="tab" aria-selected="false" data-tab="halter">Für Tierhalter</button>
+    <span class="tab-blob" aria-hidden="true"></span>
+  </div>
+
+  <div class="tpanel is-on" data-panel="praxis">
+    <div class="calc-grid">
+      <div class="card inputs">
+        <label class="rng"><span>Behandlungen pro Monat, die aus Kostengründen verschoben oder abgelehnt werden</span><output id="o-n">12</output><input type="range" id="i-n" min="1" max="60" value="12"></label>
+        <label class="rng"><span>Durchschnittlicher Betrag dieser Fälle</span><output id="o-a">1.200&nbsp;€</output><input type="range" id="i-a" min="300" max="5000" step="50" value="1200"></label>
+        <label class="rng"><span>Davon mit Finanzierung doch durchgeführt</span><output id="o-q">40&nbsp;%</output><input type="range" id="i-q" min="10" max="80" step="5" value="40"></label>
+      </div>
+      <div class="card result dark-card">
+        <div class="grain" aria-hidden="true"></div>
+        <span class="r-k">Zusätzlicher Behandlungsumsatz pro Jahr</span>
+        <b class="big-num" id="r-rev">69.120&nbsp;€</b>
+        <div class="months" id="r-months" aria-hidden="true"></div>
+        <div class="row"><span>Zusätzliche Behandlungen pro Jahr</span><b id="r-cases">58</b></div>
+        <div class="row"><span>Davon Kreditrisiko bei Ihrer Praxis</span><b>0&nbsp;€</b></div>
+        <a class="btn btn-mint full" href="#start">Gespräch vereinbaren</a>
+        <p class="fine light">Modellrechnung mit Ihren Eingaben, keine Garantie. Die Konditionen für Praxen richten sich nach Größe und Modulen.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tpanel" data-panel="halter">
+    <div class="calc-grid">
+      <div class="card inputs">
+        <label class="rng"><span>Rechnungsbetrag</span><output id="o-b">2.840&nbsp;€</output><input type="range" id="i-b" min="200" max="10000" step="10" value="2840"></label>
+        <div class="seg" role="radiogroup" aria-label="Laufzeit">
+          <button data-m="6">6 Mon.</button><button data-m="12">12 Mon.</button><button data-m="24" class="is-on">24 Mon.</button><button data-m="36">36 Mon.</button>
+        </div>
+        <div class="pets">
+          <button class="pet is-on" data-amt="2840"><svg viewBox="0 0 40 40"><path d="M10 14c-4 1-5 9-2 11M30 14c4 1 5 9 2 11"/><ellipse cx="20" cy="21" rx="10" ry="9.5"/><circle cx="16.5" cy="19" r="1.2"/><circle cx="23.5" cy="19" r="1.2"/><path d="M18 24h4l-2 2z"/></svg><span>Kreuzband-OP</span></button>
+          <button class="pet" data-amt="680"><svg viewBox="0 0 40 40"><path d="M11 17 13 7l6 7M29 17 27 7l-6 7"/><ellipse cx="20" cy="22" rx="10" ry="9"/><circle cx="16.5" cy="21" r="1.2"/><circle cx="23.5" cy="21" r="1.2"/><path d="M8 24h6M26 24h6"/></svg><span>Zahnsanierung</span></button>
+          <button class="pet" data-amt="7800"><svg viewBox="0 0 40 40"><path d="M14 8l2 5M22 7l-1 6"/><path d="M15 12c-5 3-6 12-3 18 2 4 9 4 10 0l2-10c1-5-3-10-9-8z"/><circle cx="17" cy="18" r="1.2"/></svg><span>Kolik-OP</span></button>
+          <button class="pet" data-amt="420"><svg viewBox="0 0 40 40"><path d="M15 15C13 5 15 3 17 4s1 8 0 11M25 15c2-10 0-12-2-11s-1 8 0 11"/><ellipse cx="20" cy="24" rx="9" ry="8"/><circle cx="17" cy="23" r="1.2"/><circle cx="23" cy="23" r="1.2"/></svg><span>Zahn-OP Kaninchen</span></button>
+        </div>
+      </div>
+      <div class="card result">
+        <span class="r-k dk">Angebote Ihrer Partnerbanken</span>
+        <div class="bank-offers" id="h-offers"></div>
+        <p class="fine">Beispielwerte zur Veranschaulichung, keine echten Konditionen. Welche Banken zusagen und zu welchem Zins, hängt von Ihrer Bonität ab. fintavo vermittelt, Kreditgeber ist die jeweilige Bank.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIERHALTER ============ -->
+<section class="panel light owners" id="tierhalter">
+  <div class="own-grid">
     <div class="phone reveal" aria-hidden="true">
       <div class="ph-notch"></div>
       <div class="ph-screen">
-        <div class="ph-top"><svg class="mark sm" viewBox="0 0 40 40"><rect x="4" y="5" width="30" height="8.5" rx="4.25"/><rect x="4" y="16" width="21" height="8.5" rx="4.25"/><circle cx="8.6" cy="31.6" r="4.6"/></svg><span>Mein Ratenplan</span></div>
-        <div class="ph-pet">
-          <svg viewBox="0 0 80 80" class="cat"><path d="M18 30 L22 10 L34 24Z M62 30 L58 10 L46 24Z" fill="#6b6f76"/><ellipse cx="40" cy="44" rx="25" ry="23" fill="#8a8f97"/><ellipse class="eye" cx="31" cy="40" rx="3.4" ry="4.4" fill="#e8f2a0"/><ellipse class="eye" cx="49" cy="40" rx="3.4" ry="4.4" fill="#e8f2a0"/><circle cx="31" cy="41" r="1.6" fill="#111"/><circle cx="49" cy="41" r="1.6" fill="#111"/><path d="M37 50 L43 50 L40 53Z" fill="#e79aa7"/><path d="M40 53 q-4 4 -8 2 M40 53 q4 4 8 2" stroke="#333" stroke-width="1.4" fill="none"/><path d="M14 48 h14 M14 53 h14 M52 48 h14 M52 53 h14" stroke="#ddd" stroke-width="1"/></svg>
-          <div><b>Luna</b><span>Zahnsanierung · 767,00&nbsp;€</span></div>
-        </div>
-        <div class="ph-prog"><span>2 von 6 Raten bezahlt</span><div class="pbar"><i></i></div></div>
-        <ul class="ph-list">
-          <li class="done"><span>15. Okt</span><b>127,83&nbsp;€</b><em>✓</em></li>
-          <li class="done"><span>15. Nov</span><b>127,83&nbsp;€</b><em>✓</em></li>
-          <li><span>15. Dez</span><b>127,83&nbsp;€</b><em>offen</em></li>
-          <li><span>15. Jan</span><b>127,83&nbsp;€</b><em>offen</em></li>
+        <div class="ph-top"><svg class="mark sm" viewBox="0 0 40 40"><rect x="4" y="5" width="30" height="8.5" rx="4.25"/><rect x="4" y="16" width="21" height="8.5" rx="4.25"/><circle cx="8.6" cy="31.6" r="4.6"/></svg><span>Ihre Angebote</span></div>
+        <div class="ph-sum"><span>Kreuzband-OP · Bello</span><b>2.840,00&nbsp;€</b></div>
+        <ul class="ph-offers">
+          <li class="win"><span>Partnerbank&nbsp;D</span><b>126,15&nbsp;€</b><em>6,4&nbsp;%</em></li>
+          <li><span>Partnerbank&nbsp;K</span><b>127,12&nbsp;€</b><em>7,2&nbsp;%</em></li>
+          <li><span>Partnerbank&nbsp;B</span><b>129,17&nbsp;€</b><em>8,9&nbsp;%</em></li>
+          <li><span>Partnerbank&nbsp;R</span><b>130,37&nbsp;€</b><em>9,9&nbsp;%</em></li>
         </ul>
-        <div class="ph-btn">Rate verschieben</div>
+        <div class="ph-btn">Beste Rate annehmen</div>
+        <p class="ph-fine">24 Monate · eff. Jahreszins · Beispiel</p>
       </div>
     </div>
     <div>
-      <p class="eyebrow reveal">Für Tierhalter</p>
+      <p class="label reveal">Für Tierhalter</p>
       <h2 class="reveal">Die Behandlung jetzt.<br><span class="soft">Die Rechnung in Ruhe.</span></h2>
-      <p class="lead reveal">Ihr Tier braucht eine OP, und die Rechnung kommt im ungünstigsten Moment? Mit fintavo zahlen Sie in kleinen Monatsraten, direkt in der Praxis beantragt, in Sekunden entschieden.</p>
+      <p class="lead reveal">Ihr Tier braucht eine OP, und die Rechnung kommt im ungünstigsten Moment? Mit fintavo bekommen Sie in der Praxis Angebote von über 20 Banken auf Ihr Handy und wählen die beste Rate. Ohne Papierkram, Zusage meist in wenigen Minuten.</p>
       <ul class="ticks reveal">
-        <li>3 und 6 Monate zinsfrei</li>
-        <li>Eine Rate pro Jahr kostenlos verschieben</li>
-        <li>Jederzeit vorzeitig zurückzahlen, ohne Gebühr</li>
-        <li>Alles per Handy, ohne Papierkram</li>
+        <li>Mehrere Angebote statt einer Ja-Nein-Entscheidung</li>
+        <li>Die beste Rate wird Ihnen zuerst gezeigt</li>
+        <li>Alles per Handy, direkt am Tresen</li>
       </ul>
       <div class="cta-row reveal">
-        <a class="btn btn-teal" href="#praxis-finden">Praxis mit fintavo finden</a>
-        <a class="btn btn-ghost" href="#empfehlen">Meiner Praxis fintavo empfehlen</a>
+        <button class="btn btn-dark" id="share-btn">Meiner Praxis fintavo empfehlen</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ VISION ============ -->
-<section class="sec vision">
-  <div class="wrap">
-    <p class="eyebrow reveal">Wohin wir wollen</p>
-    <h2 class="reveal">Heute Tiermedizin.<br><span class="soft">Morgen alles, was keine Kasse zahlt.</span></h2>
-    <div class="road reveal">
-      <div class="road-line"><span></span></div>
-      <div class="stop now"><i></i><b>2026</b><span>Tierarztpraxen &amp; Kliniken</span></div>
-      <div class="stop"><i></i><b>Danach</b><span>Zahnmedizin &amp; Kieferorthopädie</span></div>
-      <div class="stop"><i></i><b>Danach</b><span>Physiotherapie &amp; Osteopathie</span></div>
-      <div class="stop"><i></i><b>Danach</b><span>Ästhetik, Augenlaser, Hörgeräte</span></div>
-    </div>
-    <p class="vision-note reveal">Die finanzielle Infrastruktur für privat bezahlte Gesundheit. Vertikal, KI-nativ, gebaut in München.</p>
-  </div>
-</section>
-
-<!-- ============ PRICING ============ -->
-<section class="sec pricing" id="preise">
-  <div class="wrap">
-    <p class="eyebrow reveal">Preise</p>
-    <h2 class="reveal">Sie zahlen nur,<br><span class="soft">wenn Sie Umsatz machen.</span></h2>
-    <div class="price-grid">
-      <article class="card price reveal">
-        <h3>Standard</h3>
-        <p class="pr"><b>3,9&nbsp;%</b> pro finanzierter Rechnung</p>
-        <ul class="ticks">
-          <li>0&nbsp;€ Grundgebühr, monatlich kündbar</li>
-          <li>Auszahlung am nächsten Werktag</li>
-          <li>Kein Ausfallrisiko, kein Mahnwesen</li>
-          <li>Unbegrenzt viele Nutzer im Team</li>
-        </ul>
-        <a class="btn btn-ghost full" href="#pilot">Demo anfragen</a>
-      </article>
-      <article class="card price hot reveal">
-        <span class="badge">Nur 100 Plätze</span>
-        <h3>Gründerpraxis</h3>
-        <p class="pr"><b>0&nbsp;%</b> für 6 Monate, danach 2,9&nbsp;% für immer</p>
-        <ul class="ticks">
-          <li>Alles aus Standard</li>
-          <li>Persönliches Onboarding in der Praxis</li>
-          <li>Tresen-Kit: Aufsteller, QR-Karten, Plakat</li>
-          <li>Direkter Draht ins Produktteam</li>
-        </ul>
-        <a class="btn btn-teal full" href="#pilot">Platz sichern</a>
-        <div class="seats"><div class="seat-bar"><i style="width:63%"></i></div><span><b data-seats-taken>63</b> von 100 vergeben</span></div>
-      </article>
-      <article class="card price reveal">
-        <h3>Klinik &amp; Gruppen</h3>
-        <p class="pr"><b>Individuell</b> ab 5 Standorten</p>
-        <ul class="ticks">
-          <li>Konsolidierte Auszahlung je Standort</li>
-          <li>SSO, Rollen, Export für die Buchhaltung</li>
-          <li>Höhere Finanzierungsrahmen bis 25.000&nbsp;€</li>
-          <li>Eigener Customer Success Manager</li>
-        </ul>
-        <a class="btn btn-ghost full" href="#pilot">Gespräch vereinbaren</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PILOT / FORM ============ -->
-<section class="sec pilot" id="pilot">
-  <div class="wrap pilot-grid">
+<!-- ============ GRÜNDERPRAXIS + FORM ============ -->
+<section class="panel dark start" id="start">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="start-grid">
     <div>
-      <p class="eyebrow light reveal">Gründerpraxis werden</p>
-      <h2 class="reveal">In 10 Minuten startklar.<br><span class="soft">Ab morgen keine Absagen mehr.</span></h2>
-      <ol class="mini-steps reveal">
-        <li><b>Heute</b> Formular ausfüllen, 2 Minuten</li>
-        <li><b>Morgen</b> 15-Minuten-Call und Freischaltung</li>
-        <li><b>Übermorgen</b> erste Finanzierung am Tresen</li>
+      <p class="label light reveal">Gründerpraxis-Programm</p>
+      <h2 class="reveal light-h">In wenigen Tagen startklar.<br><span class="soft">Ohne IT-Projekt.</span></h2>
+      <ol class="timeline reveal">
+        <li><b>Tag 1</b><span>15 Minuten per Video: Wir zeigen fintavo an Ihren echten Fällen.</span></li>
+        <li><b>Tag 2</b><span>Zugänge anlegen, Team einweisen, Tresen-Kit mit QR-Aufsteller kommt per Post.</span></li>
+        <li><b>Tag 3</b><span>Erste Finanzierung am Tresen. Danach läuft fintavo im Hintergrund.</span></li>
       </ol>
-      <div class="referral reveal" id="empfehlen">
-        <b>Kollegin oder Kollege überzeugt?</b>
-        <span>Für jede empfohlene Praxis, die live geht, bekommen beide einen weiteren Monat gebührenfrei.</span>
+      <div class="perks reveal">
+        <div class="perk glass"><b>Konditionen</b><span>nach Größe und Modulen, transparent im Gespräch</span></div>
+        <div class="perk glass"><b>Gründerpraxen</b><span>persönliches Onboarding und direkter Draht ins Produktteam</span></div>
       </div>
     </div>
-    <form class="card form reveal" id="pilot-form" novalidate>
+    <form class="form glass-light reveal" id="pilot-form" novalidate>
+      <p class="form-t">Gespräch vereinbaren</p>
       <div class="f-row">
-        <label>Praxisname<input name="praxis" required placeholder="Tierarztpraxis am Isartor"></label>
+        <label>Praxis oder Klinik<input name="praxis" required placeholder="Tierarztpraxis am Isartor"></label>
         <label>PLZ<input name="plz" required inputmode="numeric" maxlength="5" placeholder="80331"></label>
       </div>
       <label>Ihr Name<input name="name" required placeholder="Dr. Maria Huber"></label>
       <label>E-Mail<input name="mail" type="email" required placeholder="praxis@beispiel.de"></label>
       <div class="f-row">
-        <label>Tierärzte im Team
-          <select name="size"><option>1</option><option selected>2–3</option><option>4–7</option><option>8+</option></select>
-        </label>
-        <label>Schwerpunkt
-          <select name="focus"><option>Kleintiere</option><option>Pferde</option><option>Gemischt</option><option>Klinik</option></select>
-        </label>
+        <label>Tierärzte im Team<select name="size"><option>1</option><option selected>2–3</option><option>4–7</option><option>8+</option></select></label>
+        <label>Wunschtermin<select name="slot"><option>Diese Woche</option><option>Nächste Woche</option><option>Später</option></select></label>
       </div>
-      <button class="btn btn-teal full" type="submit">Gründerpraxis-Platz sichern <span class="arr">→</span></button>
+      <button class="btn btn-mint full" type="submit">Termin anfragen <span class="arr">→</span></button>
       <p class="fine">Unverbindlich. Wir melden uns innerhalb eines Werktags.</p>
       <div class="form-ok" hidden>
         <div class="ok"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg></div>
-        <b>Platz reserviert.</b>
-        <span>Sie sind Gründerpraxis <b data-seats-taken>64</b> von 100. Wir melden uns morgen.</span>
+        <b>Anfrage ist da.</b>
+        <span>Wir melden uns innerhalb eines Werktags mit einem Terminvorschlag.</span>
       </div>
     </form>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section class="sec faq" id="faq">
-  <div class="wrap faq-grid">
+<section class="panel light faq" id="faq">
+  <div class="faq-grid">
     <div>
-      <p class="eyebrow reveal">FAQ</p>
-      <h2 class="reveal">Fragen, die wir<br><span class="soft">oft hören.</span></h2>
-      <p class="reveal muted" id="praxis-finden">Noch etwas offen? Schreiben Sie uns, ein Mensch antwortet.</p>
+      <p class="label reveal">Häufige Fragen</p>
+      <h2 class="reveal">Was Praxen<br><span class="soft">zuerst wissen wollen.</span></h2>
     </div>
     <div class="acc">
-      <details class="reveal"><summary>Trägt meine Praxis das Risiko, wenn ein Tierhalter nicht zahlt?</summary><p>Nein. Sie erhalten den vollen Rechnungsbetrag, abzüglich der vereinbarten Gebühr. Zahlt ein Tierhalter seine Raten nicht, ist das nicht mehr Ihr Problem. Es gibt keinen Rückgriff auf die Praxis.</p></details>
-      <details class="reveal"><summary>Wer vergibt den Kredit?</summary><p>Der Ratenkredit kommt von unserer Partnerbank. fintavo baut die Software und vermittelt die Finanzierung als Darlehensvermittler nach § 34c GewO. So bleibt alles sauber reguliert, und Sie müssen nichts davon selbst organisieren.</p></details>
-      <details class="reveal"><summary>Brauche ich neue Hardware oder eine Schnittstelle?</summary><p>Nein. fintavo läuft im Browser, auf dem Tresen-PC, Tablet oder Handy. Rechnungen laden Sie als PDF hoch oder tippen den Betrag ein. Direkte Anbindungen an Praxissoftware folgen.</p></details>
-      <details class="reveal"><summary>Wie schnell ist das Geld auf dem Konto?</summary><p>Am nächsten Werktag nach Genehmigung. Für Notfälle am Wochenende gilt: Genehmigung sofort, Auszahlung am Montag.</p></details>
-      <details class="reveal"><summary>Was passiert mit den Daten meiner Kunden?</summary><p>Verarbeitung ausschließlich in der EU, DSGVO-konform. Kontodaten werden nur mit ausdrücklicher Zustimmung des Tierhalters und nur für die Kreditentscheidung genutzt.</p></details>
-      <details class="reveal"><summary>Welche Beträge lassen sich finanzieren?</summary><p>Von 200&nbsp;€ bis 10.000&nbsp;€, für Kliniken und Pferdepraxen nach Absprache bis 25.000&nbsp;€. Auch Kostenvoranschläge können vorab finanziert werden, damit die OP gar nicht erst verschoben wird.</p></details>
+      <details class="reveal" open><summary>Wer trägt das Kreditrisiko?</summary><p>Die finanzierende Bank. Ihre Praxis erhält den Behandlungsbetrag ausgezahlt, das Ausfallrisiko liegt nicht bei Ihnen. fintavo vermittelt die Finanzierung an über 20 Partnerbanken.</p></details>
+      <details class="reveal"><summary>Müssen wir unsere Praxissoftware wechseln?</summary><p>Nein. fintavo läuft daneben im Browser. Ihre Behandlungsdaten bleiben, wo sie sind.</p></details>
+      <details class="reveal"><summary>Wie schnell bekommt der Tierhalter eine Zusage?</summary><p>In der Regel innerhalb weniger Minuten. Die Anfrage geht gleichzeitig an alle Partnerbanken, der Tierhalter sieht die beste Rate direkt auf seinem Handy.</p></details>
+      <details class="reveal"><summary>Was kostet fintavo die Praxis?</summary><p>Das richtet sich nach Größe und Modulen Ihrer Praxis oder Klinik. Wir besprechen es transparent im ersten Gespräch.</p></details>
+      <details class="reveal"><summary>Wie lange dauert die Einführung?</summary><p>Wenige Tage. Zugänge anlegen, Team einweisen, erste Fälle gemeinsam durchgehen. Ein IT-Projekt ist nicht nötig.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
-<section class="sec final">
-  <div class="wrap final-in reveal">
-    <svg class="mark xl" viewBox="0 0 40 40" aria-hidden="true"><rect class="b1" x="4" y="5" width="30" height="8.5" rx="4.25"/><rect class="b2" x="4" y="16" width="21" height="8.5" rx="4.25"/><circle class="b3" cx="8.6" cy="31.6" r="4.6"/></svg>
-    <h2>Keine Behandlung sollte an der Rechnung scheitern.</h2>
-    <a class="btn btn-teal" href="#pilot">Jetzt Gründerpraxis werden <span class="arr">→</span></a>
+<!-- ============ AUSBLICK ============ -->
+<section class="panel light outlook">
+  <div class="out-grid">
+    <div>
+      <p class="label reveal">Ausblick</p>
+      <h2 class="reveal">Erst die Finanzierung.<br><span class="soft">Dann der Rest.</span></h2>
+      <p class="lead reveal">Wenn Behandlungsfinanzierung in Ihrer Praxis läuft, folgen auf Wunsch Zahlungen am Empfang, Rechnungen und Mahnwesen auf derselben Plattform. Ein Schritt nach dem anderen.</p>
+    </div>
+    <div class="road reveal">
+      <div class="stop now"><i></i><b>Heute</b><span>Behandlungsfinanzierung</span></div>
+      <div class="stop"><i></i><b>Danach</b><span>Zahlungen am Empfang</span></div>
+      <div class="stop"><i></i><b>Danach</b><span>Rechnungen &amp; Mahnwesen</span></div>
+    </div>
   </div>
+</section>
+
+<section class="final reveal">
+  <svg class="mark xl" viewBox="0 0 40 40" aria-hidden="true"><rect class="b1" x="4" y="5" width="30" height="8.5" rx="4.25"/><rect class="b2" x="4" y="16" width="21" height="8.5" rx="4.25"/><circle class="b3" cx="8.6" cy="31.6" r="4.6"/></svg>
+  <h2>Keine Behandlung sollte an der Rechnung scheitern.</h2>
+  <a class="btn btn-dark" href="#start">Gespräch vereinbaren <span class="arr">→</span></a>
 </section>
 
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-in">
-    <div>
-      <a class="brand" href="#"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="5" width="30" height="8.5" rx="4.25"/><rect x="4" y="16" width="21" height="8.5" rx="4.25"/><circle cx="8.6" cy="31.6" r="4.6"/></svg><span class="word"><span class="f">f</span>intavo</span></a>
-      <p class="muted">Building the financial layer for privately funded healthcare.</p>
-    </div>
-    <div class="foot-links">
-      <a href="#praxen">Für Praxen</a><a href="#tierhalter">Für Tierhalter</a><a href="#preise">Preise</a><a href="#faq">FAQ</a>
-    </div>
+  <div class="foot-in">
+    <a class="brand" href="#"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect x="4" y="5" width="30" height="8.5" rx="4.25"/><rect x="4" y="16" width="21" height="8.5" rx="4.25"/><circle cx="8.6" cy="31.6" r="4.6"/></svg><span class="word">fintavo</span></a>
+    <div class="foot-links"><a href="#ablauf">Ablauf</a><a href="#rechner">Rechner</a><a href="#tierhalter">Tierhalter</a><a href="#faq">FAQ</a></div>
   </div>
-  <div class="wrap foot-bottom">
+  <div class="foot-bottom">
     <span>© fintavo, Made with <span class="heart">♥</span> in Munich</span>
-    <span class="disclaimer">Inoffizieller Konzeptentwurf, nicht von der fintavo GmbH. Alle Zahlen, Konditionen und Beispiele sind fiktiv. Kein Kreditangebot.</span>
+    <span class="disclaimer">Inoffizieller Konzeptentwurf, nicht von der fintavo GmbH. Zinssätze, Raten und Rechenbeispiele sind fiktiv. Kein Kreditangebot.</span>
   </div>
 </footer>
 
